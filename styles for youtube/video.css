@@ -1,0 +1,116 @@
+.picture{
+  width:100%;
+ }
+ .profile-picture{
+   width:35px;
+   border-radius:50px;
+   cursor:pointer;
+ }
+ .whole-container a{
+  text-decoration:none;
+  color:black;
+ }
+
+ .video-title{
+   font-size:15px;
+   font-weight:500;
+   line-height:24px;
+ }
+ .video-author,.video-stats{
+   color:rgb(96,96,96);
+   font: size 14px;
+ }
+ .video-author{
+   margin-top:12px;
+   margin-bottom:5px;
+ }
+ .video-info-grid{
+   display:grid;
+   grid-template-columns:50px 1fr;
+   column-gap:13px;
+ }
+ .full-container-video-grid{
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   column-gap: 20px;
+   row-gap:30px;
+ }
+
+ @media (max-width:1300px){
+  .full-container-video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+ }
+@media (min-width:1301px){
+  .full-container-video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width:1000px){
+  .full-container-video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width:860px){
+  .full-container-video-grid{
+    grid-template-columns:1fr;
+  }
+ }
+ .video-picture{
+  position:relative;
+ }
+ .video-picture div{
+  position:absolute;
+  background-color:black;
+  color:white;
+  right:10px;
+  bottom:10px;
+  padding:8px;
+  font-weight:500;
+  font-family:arial;
+  font-size:20px;
+ }
+ .video-pic{
+  cursor:pointer;
+  position:relative;
+ }
+ .name{
+  position:relative;
+ }
+ .name div{
+  position:absolute;
+  bottom:-70px;
+  background-color:white;
+  border-radius:5px;
+  opacity:0;
+  pointer-events:none;
+  padding:10px;
+ }
+ .name:hover div{
+  opacity:1;
+ }
+.name-and-followers{
+  width: 250px;
+  display:grid;
+  grid-template-columns:40px 1fr 1fr;
+  column-gap:10px;
+}
+.name-and-followers img{
+  width:40px;
+  border-radius:20px;
+  vertical-align:center;
+
+}
+.name-and-followers p{
+  font-family:arial;
+  line-height:25px;
+}
+.name-and-followers .singer{
+  font-weight:bold;
+  white-space:nowrap;
+  
+}
+.name-and-followers .followers{
+  font-size:15px;
+  white-space:nowrap;
+}
